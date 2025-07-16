@@ -1,0 +1,12 @@
+<h2>Livros Cadastrados</h2>
+<ul>
+  {% for livro in livros %}
+    <li>
+      <a href="/livros/">
+        {{ livro.titulo }}
+      </a>
+    </li>
+  {% empty %}
+    <li>Nenhum livro cadastrado.</li>
+  {% endfor %}
+</ul>
